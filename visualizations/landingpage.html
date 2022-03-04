@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <!-- Webpage title -->
+        <title>Moon HW 11</title>
+
+        <!-- 
+            For source-citing, this page is being built from Dr. Arrington's framework his "Favorite Things" page he made in class 
+            Modifications and flavorings are my own
+        -->
+
+        <!-- Import style sheets -->
+        <link rel="stylesheet" type="text/css" href="css/mediaQuery.css">
+        <link rel="stylesheet" type="text/css" href="css/favTable.css">
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    </head>
+
+    <!-- Body of HTML ("the page") -->
+    <body>
+        <!-- Navigation bar -->
+        <nav id="navigationlist">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link active" href="visualizations/landingpage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visualizations/visualization_1.html">Visualization 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visualizations/visualization_2.html">Visualization 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visualizations/visualization_3.html">Visualization 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visualizations/visualization_4.html">Visualization 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visualizations/data.html">Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="visualizations/comparison.html">Comparison</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Small screen drop-down menu -->
+        <nav id="smallScreenNav">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                Click to View Pages
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="visualization_1.html">Visualization 1</a>
+                <a class="dropdown-item" href="visualization_2.html">Visualization 2</a>
+                <a class="dropdown-item" href="visualization_3.html">Visualization 3</a>
+                <a class="dropdown-item" href="visualization_4.html">Visualization 4</a>
+                <a class="dropdown-item" href="data.html">Data</a>
+                <a class="dropdown-item" href="comparison.html">Comparison</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="headings.html">Headings</a></li>
+                <li><a href="textDemo.html">Text Demo</a></li>
+                <li><a href="bulletlist.html">Unordered Lists</a></li>
+                <li><a href="numberlist.html">Ordered Lists</a></li>
+                <li><a href="cssdemo.html">CSS Demo</a></li>
+                <li><a href="travel.html">Dream Vacation Demo</a></li>
+            </ul>
+        -->
+
+        <!-- Body of the page -->
+        <center>
+            <!-- Page header and explanation -->
+            <h1>Welcome to my Homework 11 Webpage!</h1>
+            <h2>This is a visualization dashboard for weather data plotting.</h2>
+            <h5>Please select which visualization you are most interested, either by the top bar or previews to the right</h5>
+            <hr>
+            
+            <!-- Creating container for page grid -->
+            <div class="container">
+                <div class ="row">
+
+                    <!-- Left third-->
+                    <div class = "col-md-4">
+                        <table border="1" class="favTable">
+                            <caption>
+                                A few of Dr. A's Favorite Things...
+                            </caption>
+                            <tr>
+                                <th>Favorite Movies</th>
+                                <th>Programming Languages</th>
+                                <th>Sports</th>
+                            </tr>
+                            <tr>
+                                <td>Godfather I and II</td>
+                                <td>C++</td>
+                                <td>Basketball</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>Python</td>
+                                <td>American Football</td>
+                            </tr>
+                            <tr>
+                                <td>Indiana Jones and the Temple of Doom</td>
+                                <td>Java</td>
+                                <td>Boxing</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Middle third-->
+                    <div class = "col-md-4">
+                        <table border="1" class="favTable">
+                            <caption>
+                                A few of Dr. A's Favorite Things...
+                            </caption>
+                            <tr>
+                                <th>Favorite Movies</th>
+                                <th>Programming Languages</th>
+                                <th>Sports</th>
+                            </tr>
+                            <tr>
+                                <td>Godfather I and II</td>
+                                <td>C++</td>
+                                <td>Basketball</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>Python</td>
+                                <td>American Football</td>
+                            </tr>
+                            <tr>
+                                <td>Indiana Jones and the Temple of Doom</td>
+                                <td>Java</td>
+                                <td>Boxing</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Right third-->
+                    <div class = "col-md-4">
+                        <table border="1" class="favTable">
+                            <caption>
+                                A few of Dr. A's Favorite Things...
+                            </caption>
+                            <tr>
+                                <th>Favorite Movies</th>
+                                <th>Programming Languages</th>
+                                <th>Sports</th>
+                            </tr>
+                            <tr>
+                                <td>Godfather I and II</td>
+                                <td>C++</td>
+                                <td>Basketball</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>Python</td>
+                                <td>American Football</td>
+                            </tr>
+                            <tr>
+                                <td>Indiana Jones and the Temple of Doom</td>
+                                <td>Java</td>
+                                <td>Boxing</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; 2022, Bootcamp!</p>
+            </footer>
+        </center>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
