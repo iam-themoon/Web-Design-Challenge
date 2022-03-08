@@ -5,35 +5,28 @@
 
         <!-- 
             For source-citing, this page is being built from Dr. Arrington's framework his "Favorite Things" page he made in class 
+            as well as several Bootstrap example codes.
             Modifications and flavorings are my own
         -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Import style sheets -->
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <link rel="stylesheet" type="text/css" href="#">
         <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     </head>
 
-    <!-- Body of HTML ("the page") -->
-    <body>
-        <!-- Page header and explanation -->
-        <div class="jumbotron text-center" style="background-color: whitesmoke; margin-bottom:0">
-            <h1>Welcome to my Homework 11 Webpage!</h1>
-            <h4>This is a visualization dashboard for weather data plots. <br>
-                On the right you can see the visualizations options. <br>
-                To view them, either click the image or select the tab at the top of the page.
-            </h4>
-        </div>
+<!------------------------------------------------------------------------------------------------>
 
+    <!-- Body of HTML ("the page") -->
+    <body style="background-color: whitesmoke">
         <!-- Navigation bar from bootstrap -->
-        <nav class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: gold">          
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: white">          
             
             <!-- Current page label in top left  -->
-            <a class="navbar-brand">Home Page</a>
+            <nav class="navbar-brand"> <span class="navbar-text"><strong>Home Page</strong> </span></nav>
 
             <!-- Create toggler hamburger menu for when screen is shrunk -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -44,7 +37,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 
                 <!-- Unordered list of navbar links, auto-aligned to right -->
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto nav-item active">
                     <!-- Item 1 - Home page (the active page) -->
                     <li class="nav-item active">
                         <a class="nav-link" href="landingpage.html">Home</a>
@@ -75,6 +68,8 @@
             </div>
         </nav>
 
+<!------------------------------------------------------------------------------------------------>
+
         <!-- Body of the page -->
         <!-- Divide page into containers -->
         <div class="container" style="margin-top:30px">
@@ -83,10 +78,11 @@
             <div class="row">
 
                 <!-- Create small 1/4-page column -->
-                <div class="col-sm-8">
+                <div class="col-md-6" style="background-color: white">
 
                     <!-- Header for page/explaination paragraph -->
-                    <h1> Summary: Latitude vs. X </h1>
+                    <h1 style="margin-top: 30px"> Summary: Latitude vs. X </h1>
+                    <hr>
 
                         <!-- Paragraph and example image (Fig1) -->
                         <p>
@@ -102,56 +98,35 @@
                             <!-- Paragraph cont -->
                             After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as a part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
                         </p>
-                </div>     
-                
-                <div class="col-sm-4">
-                    <h2>Visualizations</h2>
-                    <hr>
+                </div>
+                <div class="col-md-6" style="background-color: white">
+                    <center>
+                        <h2 style="margin-top: 30px">Visualizations</h2>
+                        <hr>
+                        <!-- Link to Vis1 page -->
+                        <a href="visualization_1.html">
+                            <!-- Fig1 img -->
+                            <img src="../Resources/assets/images/Fig1.png" alt="Fig1">
+                        </a>
+                            
+                        <!-- Link to Vis2 page -->
+                        <a href="visualization_2.html">
+                            <!-- Fig2 img -->
+                            <img src="../Resources/assets/images/Fig2.png" alt="Fig2">
+                        </a>
 
-                    <!-- Table for Vis images -->
-                    <table>
-                        <!-- Row 1 -->
-                        <tr>
-                            <!-- Column 1  -->
-                            <th>
-                                <!-- Link to Vis1 page -->
-                                <a href="visualization_1.html">
-                                    <!-- Fig1 img -->
-                                    <img src="../Resources/assets/images/Fig1.png" alt="Fig1">
-                                </a>
-                            </th>
-
-                            <!-- Column 2 -->
-                            <th>
-                                <!-- Link to Vis2 page -->
-                                <a href="visualization_2.html">
-                                    <!-- Fig2 img -->
-                                    <img src="../Resources/assets/images/Fig2.png" alt="Fig2">
-                                </a>
-                            </th>
-                        </tr>
-                        
-                        <!-- Row 2 -->
-                        <tr>
-                            <!-- Column 1  -->
-                            <th>
-                                <!-- Link to Vis3 page -->
-                                <a href="visualization_3.html">
-                                    <!-- Fig3 img -->
-                                    <img src="../Resources/assets/images/Fig3.png" alt="Fig3">
-                                </a>
-                            </th>
-
-                            <!-- Column 2 -->
-                            <th>
-                                <!-- Link to Vis4 page -->
-                                <a href="visualization_4.html">
-                                    <!-- Fig4 img -->
-                                    <img src="../Resources/assets/images/Fig4.png" alt="Fig4">
-                                </a>
-                            </th>
-                        </tr>
-                    </table>
+                        <!-- Link to Vis3 page -->
+                        <a href="visualization_3.html">
+                            <!-- Fig3 img -->
+                            <img src="../Resources/assets/images/Fig3.png" alt="Fig3">
+                        </a>
+                                
+                        <!-- Link to Vis4 page -->
+                        <a href="visualization_4.html">
+                            <!-- Fig4 img -->
+                            <img src="../Resources/assets/images/Fig4.png" alt="Fig4">
+                        </a>
+                    </center>
                 </div>
             </div>    
         </div>
