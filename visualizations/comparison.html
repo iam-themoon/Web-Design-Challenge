@@ -78,55 +78,56 @@
             <div class="row">
 
                 <!-- Create small 1/4-page column -->
-                <div class="col-md-6" style="background-color: white">
+                <div class="col-md-12" style="background-color: white">
 
                     <!-- Header for page/explaination paragraph -->
-                    <h1 style="margin-top: 30px"> Summary: Latitude vs. X </h1>
+                    <h1 style="margin-top: 30px"> Comparison: Latitude vs. X </h1>
                     <hr>
+                    
+                    Click any plot to see an in-depth analysis.
 
-                        <!-- Paragraph and example image (Fig1) -->
-                        <p>
-                            <!-- Fig1 -->
-                            <img src="../Resources/assets/images/Fig1.png" alt="Fig1" style="float: left">
-                            
-                            <!-- Paragraph -->
-                            The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled dataa from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                            
-                            <!-- Breaks -->
-                            <br> <br>
+                    <!-- Breaks -->
+                    <br> <br>
 
-                            <!-- Paragraph cont -->
-                            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as a part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                        </p>
-                </div>
-                <div class="col-md-6" style="background-color: white">
-                    <center>
-                        <h2 style="margin-top: 30px">Visualizations</h2>
-                        <hr>
-                        <!-- Link to Vis1 page -->
-                        <a href="visualization_1.html">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h4>vs. Max Temperature</h4>
+                          <!-- Link to Vis1 page -->
+                          <a href="visualization_1.html">
                             <!-- Fig1 img -->
                             <img src="../Resources/assets/images/Fig1.png" alt="Fig1">
-                        </a>
-                            
-                        <!-- Link to Vis2 page -->
-                        <a href="visualization_2.html">
-                            <!-- Fig2 img -->
+                          </a>
+                        </div>
+                        
+                        <div class="col-md-6">
+                          <h4>vs. Humidity</h4>
+                          <!-- Link to Vis2 page -->
+                          <a href="visualization_2.html">
+                            <!-- Fig1 img -->
                             <img src="../Resources/assets/images/Fig2.png" alt="Fig2">
-                        </a>
+                          </a>
+                        </div>
 
-                        <!-- Link to Vis3 page -->
-                        <a href="visualization_3.html">
-                            <!-- Fig3 img -->
-                            <img src="../Resources/assets/images/Fig3.png" alt="Fig3">
-                        </a>
-                                
-                        <!-- Link to Vis4 page -->
-                        <a href="visualization_4.html">
-                            <!-- Fig4 img -->
-                            <img src="../Resources/assets/images/Fig4.png" alt="Fig4">
-                        </a>
-                    </center>
+                        <div class="col-md-6">
+                          <h4>vs. Cloudiness</h4>
+                          <!-- Link to Vis3 page -->
+                          <a href="visualization_3.html">
+                            <!-- Fig1 img -->
+                            <img src="../Resources/assets/images/Fig3.png" alt="Fig2">
+                          </a>
+                        </div>
+
+                        <div class="col-md-6">
+                          <h4>vs. Windspeed</h4>
+                          <!-- Link to Vis4 page -->
+                          <a href="visualization_4.html">
+                            <!-- Fig1 img -->
+                            <img src="../Resources/assets/images/Fig4.png" alt="Fig2">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>    
         </div>
